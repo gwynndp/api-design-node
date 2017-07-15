@@ -1,0 +1,40 @@
+
+// MODEL of our Data Object = what our resource data looks like
+{
+  'name': 'Simba',
+  'id': 1,
+  'age': 3,
+  'pride': 'the cool cats',
+  'gender': male
+}
+
+// MODEL of our REST endpoints behavior
+
+{
+  "GET /lions": {
+    "desc": "returns all lions",
+    "response": "200 application/json",
+    "data": [{},{},{}]
+  },
+  "GET /lions/:id": {
+    "desc": "returns a specific lion designated by it's id",
+    "response": "200 application/json",
+    "data": {}
+  },
+  "POST /lions": {
+    "desc": "create and return a new lion using the posted object data",
+    "response": "201 application/json",
+    "data": {}
+  },
+  "PUT /lions/:id": {
+    "desc": "find & update & return a specific lion based on the id passed with the posted update object",
+    "response": "200 application/json",
+    "data": {}
+  },
+  "DELETE /lions/:id": {
+    "desc": "delete and return the matching lion",
+    "response": "200 application/json",
+    "data": {}
+  },
+
+}
